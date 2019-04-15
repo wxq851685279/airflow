@@ -49,8 +49,8 @@ try:
     k = KubernetesPodOperator(
         namespace='default',
         image="ubuntu:16.04",
-        cmds=["bash", "-cx"],
-        arguments=["sleep", "300"],
+        cmds=["sleep"],
+        arguments=["300"],
         labels={"foo": "bar"},
         name="airflow-test-pod",
         in_cluster=True,
