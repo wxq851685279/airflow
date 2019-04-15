@@ -50,7 +50,7 @@ try:
         namespace='default',
         image="ubuntu:16.04",
         cmds=["bash", "-cx"],
-        arguments=["echo", "10"],
+        arguments=["sleep", "300"],
         labels={"foo": "bar"},
         name="airflow-test-pod",
         in_cluster=True,
